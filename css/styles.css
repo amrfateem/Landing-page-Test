@@ -1,8 +1,58 @@
-#header {
-	border-top: 1px;
-	color:darkcyan;
+body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: azure;
-	background-blend-mode: color-burn;
+	background: linear-gradient(-90deg, #23a6d5, #23d5ab);
+	background-size: auto;
+	animation: gradient 1s ease infinite;
+	max-width: 100%;
+	margin: 0 auto;
+	word-break: break-all;
+	font-size: 20px;
+}
+
+
+.header {
+	color: #41136b;
+	padding: 12px 0 5px 15px;
+	text-decoration: none;
+	font-size: 30px;
+	line-height: auto;
+	width: auto;
+	height: auto;
+	margin: auto;
+	background-blend-mode: overlay;
+
+	/* For phone small display */
+}
+
+.header:hover {
+	color: aqua;
+	font-size: 35px;
+	transition: all 0.4s ease-in;
+	/* يلا ماهو كتر اكواد :""" */
+
+}
+
+footer {
+	padding: 10px 0 10px 8px;
+	font-size: 30px;
+	background-color: #52b4b4;
+	width: auto;
+	height: auto;
 	text-align: center;
+}
+
+.sections {
+	padding: 20px;
+	width: 60%;
+	display: block;
+	text-align: center;
+}
+
+h2 {
+	border-bottom: 1px solid aqua;
+	color: aquamarine;
+}
+
+
+#sec1 {
 }
