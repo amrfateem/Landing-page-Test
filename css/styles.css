@@ -1,16 +1,56 @@
 body {
+	padding: 0 0 0 10px;
 	font-family: 'Open Sans', sans-serif;
 	background: linear-gradient(#23a6d5, #23d5ab);
 	background-size: auto;
 	animation: gradient 1s ease infinite;
 	max-width: 100%;
 	margin: 0 auto;
-	word-break: break-all;
+	word-break: normal;
 	font-size: 20px;
 }
 
+#sidenavbar {
+	background-color: rgb(17, 38, 39);
+	z-index: 1;
+	font-size: 20px;
+	padding: 5px 15px 0 7px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	display: block;
+	line-height: 50px;
 
-.header {
+}
+
+.navitem {
+	text-decoration: none;
+	color: aqua;
+	transition: all 0.3s ease-out;
+}
+
+.navitem:hover {
+	color: aquamarine;
+	transition: all 0.3s ease-in;
+
+}
+
+@media screen and (max-height: 450px) {
+	.sidenavbar {
+		padding-top: 15px;
+	}
+
+	.sidenavbar a {
+		font-size: 18px;
+	}
+}
+
+
+.welcomesign {
+	position: relative;
 	color: #41136b;
 	padding: 0 0 0 0;
 	text-decoration: none;
@@ -24,7 +64,7 @@ body {
 	/* For phone small display */
 }
 
-.header:hover {
+.welcomesign:hover {
 	color: aqua;
 	font-size: 35px;
 	transition: all 0.5s ease-in;
@@ -44,8 +84,8 @@ footer {
 
 .sections {
 	padding: 20px;
-	width: 70%;
-	display: block;
+	width: 80%;
+	display: grid;
 	text-align: center;
 	margin: auto;
 }
@@ -53,8 +93,19 @@ footer {
 h2 {
 	border-bottom: 1px solid aqua;
 	color: aquamarine;
+	transition: all 0.5s ease-out;
 }
 
+h2:hover {
+	color: azure;
+	transition: all 0.5s ease-in;
+}
+
+
+#title {
+	padding-left: 20px;
+	text-align: start;
+}
 
 #topbutton {
 	display: none;
@@ -71,6 +122,7 @@ h2 {
 	font-size: 20px;
 	transition: all 0.4s ease-out;
 }
+
 #topbutton:hover {
 	color: black;
 	transition: all 0.4s ease-in;

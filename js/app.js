@@ -1,15 +1,20 @@
-topb=document.getElementById("topbutton");
-window.onscroll = function() {scrollFunction()};
-// function to show the button when goin down
+//DOM to get tools variables for functions
+let topb = document.getElementById("topbutton");
+window.onscroll = function () {
+	scroll()
+};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topb.style.display = "block";
-  } else {
-    topb.style.display = "none";
-  }
+// function to show the button when goin down
+function scroll() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		topb.style.display = "block";
+	} else {
+		topb.style.display = "none";
+	}
 }
 
+//function to scrollup
 function topFunction() {
-  document.documentElement.scrollTop = 0; 
-} //function to scrollup
+	document.documentElement.scrollTop = 0;
+} 
+
