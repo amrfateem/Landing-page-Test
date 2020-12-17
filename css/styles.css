@@ -12,19 +12,20 @@ body {
 
 #sidenavbar {
 	background-color: rgb(17, 38, 39);
-	z-index: 1;
-	font-size: 20px;
+	z-index: 2;
+	font-size: 15px;
 	padding: 5px 15px 0 7px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	width: auto;
+	width: fit-content;
 	height: auto;
 	display: block;
 	line-height: 50px;
-
+	transition: all 0.3s ease-out
 }
+
 
 .navitem {
 	text-decoration: none;
@@ -35,6 +36,7 @@ body {
 .navitem:hover {
 	color: aquamarine;
 	transition: all 0.3s ease-in;
+
 
 }
 
@@ -48,8 +50,7 @@ body {
 	}
 }
 
-
-.welcomesign {
+#welcomesign {
 	position: relative;
 	color: #41136b;
 	padding: 0 0 0 0;
@@ -57,14 +58,15 @@ body {
 	font-size: 30px;
 	line-height: auto;
 	text-align: center;
-	width: auto;
+	width: 80%;
 	height: auto;
 	margin: auto;
+	display: block;
 	transition: all 0.5s ease-out;
 	/* For phone small display */
 }
 
-.welcomesign:hover {
+#welcomesign:hover {
 	color: aqua;
 	font-size: 35px;
 	transition: all 0.5s ease-in;
@@ -73,21 +75,38 @@ body {
 }
 
 footer {
-	padding: 10px 0 10px 8px;
+	padding: 30px 0 10px 8px;
 	font-size: 30px;
 	background-color: #52b4b4;
 	width: auto;
-	height: auto;
+	height: 50px;
 	text-align: center;
 	box-shadow: 5px 0 0 0;
 }
 
 .sections {
-	padding: 20px;
+	padding: 50px;
 	width: 80%;
 	display: grid;
 	text-align: center;
 	margin: auto;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.notactivesec {
+	display: grid;
+	margin: auto;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.activesec {
+	display: grid;
+	margin: auto;
+	background-color: rgb(65, 158, 158);
+	transition: all 0.5s ease-in;
+
 }
 
 h2 {
