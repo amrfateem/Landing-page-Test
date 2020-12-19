@@ -1,59 +1,24 @@
-body {
-	padding: 0 0 0 10px;
-	font-family: 'Open Sans', sans-serif;
-	background: linear-gradient(#23a6d5, #23d5ab);
-	background-size: auto;
-	animation: gradient 1s ease infinite;
-	max-width: 100%;
-	margin: 0 auto;
-	word-break: normal;
-	font-size: 20px;
-}
+@media screen and (max-width: 450px) {
+	.sections{
+		padding-left: 70px;
+		position: relative;
+		margin: 0 0 0 15px;
 
-#sidenavbar {
-	background-color: rgb(17, 38, 39);
-	z-index: 2;
-	font-size: 15px;
-	padding: 5px 15px 0 7px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: fit-content;
-	height: auto;
-	display: block;
-	line-height: 50px;
-	transition: all 0.3s ease-out
-}
-
-
-.navitem {
-	text-decoration: none;
-	color: aqua;
-	transition: all 0.3s ease-out;
-}
-
-.navitem:hover {
-	color: aquamarine;
-	transition: all 0.3s ease-in;
-
-
-}
-
-@media screen and (max-height: 450px) {
-	.sidenavbar {
-		padding-top: 15px;
+	}
+	#sidenavbar {
+		flex-direction: column;
+		margin: auto;
 	}
 
-	.sidenavbar a {
-		font-size: 18px;
+	#sidenavbar a {
+		font-size: 9px;
 	}
 }
 
 #welcomesign {
 	position: relative;
 	color: #41136b;
-	padding: 0 0 0 0;
+	padding: 0 0 0 150px;
 	text-decoration: none;
 	font-size: 30px;
 	line-height: auto;
@@ -74,14 +39,56 @@ body {
 
 }
 
-footer {
-	padding: 30px 0 10px 8px;
-	font-size: 30px;
-	background-color: #52b4b4;
+#sidenavbar {
+	background-color: rgb(17, 38, 39);
+	z-index: 2;
+	font-size: 16px;
+	padding: 5px 15px 0 7px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
 	width: auto;
-	height: 50px;
-	text-align: center;
-	box-shadow: 5px 0 0 0;
+	height: auto;
+	display: block;
+	line-height: 50px;
+	float: left;
+	transition: all 0.3s ease-out;
+}
+
+.activenav{
+	font-size: 19px;
+	transition: all 0.5s ease;
+	color: aquamarine;
+}
+
+
+
+
+.navitem {
+	text-decoration: none;
+	color: aqua;
+	transition: all 0.5s ease-in-out;
+}
+
+.navitem:hover {
+	color: aquamarine;
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+body {
+	padding: 0 0 0 150px;
+	font-family: 'Open Sans', sans-serif;
+	background: linear-gradient(#23a6d5, #23d5ab);
+	background-size: auto;
+	animation: gradient 1s ease infinite;
+	max-width: 100%;
+	margin: 0 auto;
+	word-break: normal;
+	font-size: 20px;
+	float: right;
 }
 
 .sections {
@@ -145,4 +152,14 @@ h2:hover {
 #topbutton:hover {
 	color: black;
 	transition: all 0.4s ease-in;
+}
+
+footer {
+	padding: 30px 0 10px 8px;
+	font-size: 30px;
+	background-color: #52b4b4;
+	width: auto;
+	height: 50px;
+	text-align: center;
+	box-shadow: 5px 0 0 0;
 }
